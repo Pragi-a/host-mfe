@@ -1,0 +1,20 @@
+<header class="site-header">
+  <a class="brand" routerLink="/" aria-label="Pragi Labs home">
+    <span class="brand-mark">P</span>
+    <span>pragi<span class="brand-muted">.dev</span></span>
+  </a>
+
+  <nav aria-label="Primary navigation">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/security" routerLinkActive="active">Security</a>
+    <a routerLink="/observability" routerLinkActive="active">Observability</a>
+    <a routerLink="/ai" routerLinkActive="active">AI Labs</a>
+  </nav>
+</header>
+
+<main><router-outlet /></main>
+
+<footer>
+  <span>Portfolio shell · Angular 20</span>
+  <span>Built to host independently deployed labs.</span>
+</footer>
